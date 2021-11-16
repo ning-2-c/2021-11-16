@@ -1,0 +1,220 @@
+@import 'base';
+@import 'normalize';
+
+@rem:75rem;
+
+// 头部
+header{
+    // 头部上部分
+    .info{
+        position: relative;
+        width: 100%;
+        height: ( 80/@rem);
+        background-color: #ababab;
+
+        // logo部分
+        .logo{
+            position: absolute;
+            left: (17 /@rem);
+            top: (20/@rem);
+            img{
+                width: (88 /@rem);
+                height: (44 /@rem);
+            }
+
+        }
+
+        //文字部分
+        .intro{
+            position: absolute;
+            left: (116/@rem);
+            top: (18/@rem);
+            font-size:(11/@rem);
+            color: #fff;
+
+            p:first-child{
+                font-size: (12/@rem);
+                margin-bottom: (7/@rem);
+
+                span:first-child{
+                    display: inline-block;
+                    width: (22/@rem);
+                    height: (14/@rem);
+                   
+                    background-image: url(../images/品牌.png);
+                    background-size: 100%;
+                    vertical-align: middle;
+                }
+            }
+            p:last-child{
+                margin-top: (4/@rem);
+
+                span:first-child{
+                    display: inline-block;
+                    width: (9/@rem);
+                    height: (9/@rem);
+                    background-image: url(../images/减3.png);
+                    background-size: 100%;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+    }
+    .notify{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: (20/@rem);
+        background-color: #bebebe;
+        img:first-child{
+            width: (16/@rem);
+            height: (9/@rem);
+            margin-left: (38/@rem);
+        }
+        div{
+            display: flex;
+            flex: 1;
+            width: 0;
+            span{
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+        img:last-child{
+            width: (3/@rem);
+            height: (5/@rem);
+            margin-right: (38/@rem);
+        }
+    }
+}
+
+nav{
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: (30/@rem);
+        border-bottom: (2/@rem) solid #e5e6e7;
+        color: #535353;
+        font-size: (11/@rem);
+        box-sizing: border-box;
+        li{
+            a{
+                &:link{
+                    color: #4e555d;
+                }
+                &:visited{
+                    color: #4e555d;
+                }
+                &:active{
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+// 课程内容区域
+section{
+    
+    .container{
+        display: flex;
+        .left{
+            ul{
+                margin-left: (9/@rem);
+                margin-right: (16/@rem);
+                li{
+                    width: (91/@rem);
+                    height: (42/@rem);
+                    line-height: (42/@rem);
+                    border-bottom: (1/@rem) solid #e5e6e7;
+                    font-size: (12/@rem);
+                    box-sizing: border-box;
+                    a{
+                        color: #535353;
+                    }
+                }
+            }
+        }
+    
+        .right{
+            .title{
+                margin-top: (4/@rem);
+                color: #93999f;
+                font-size: (12/@rem);
+            }
+            .wrap{
+                display: flex;
+                width: (243/@rem);
+                height: (72/@rem);
+                margin-top: (16/@rem);
+                border-bottom: (1/@rem) solid #e5e6e7;
+                box-sizing: border-box;
+
+                &.no-border{
+                    border-bottom: (0/@rem) solid #e5e6e7;
+                }
+                
+                .pic{
+                    margin-left: (3/@rem);
+                   
+                    img{
+                        width: (52/@rem);
+                        height: (52/@rem);
+                    }
+                }
+                .txt{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    margin-left:(22/@rem) ;
+
+                    p{
+                        color: #93999f;
+                    }
+                    a{
+                        width: (90/@rem);
+                        height: (15/@rem);
+                        background-color: rgb(13, 182, 238);
+                        text-align: center;
+                        line-height: (15/@rem);
+                    color: #fff;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+// 底部
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: (36/@rem);
+
+    .left{
+        width: 50%;
+        img{
+            width: 100%;
+            height: (36/@rem);
+        }
+    }
+    .right{
+        width: 50%;
+        height: (36/@rem);
+        text-align: center;
+        line-height: (36/@rem);
+        background-color: #ff6347;
+
+        a{
+            color: #fff;
+        }
+    }
+}

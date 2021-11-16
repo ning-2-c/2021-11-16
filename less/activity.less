@@ -1,0 +1,288 @@
+@import 'base';
+@import 'normalize';
+
+@rem:75rem;
+
+// 头部
+header{
+    // 头部上部分
+    .info{
+        position: relative;
+        width: 100%;
+        height: ( 80/@rem);
+        background-color: #ababab;
+
+        // logo部分
+        .logo{
+            position: absolute;
+            left: (17 /@rem);
+            top: (20/@rem);
+            img{
+                width: (88 /@rem);
+                height: (44 /@rem);
+            }
+
+        }
+
+        //文字部分
+        .intro{
+            position: absolute;
+            left: (116/@rem);
+            top: (18/@rem);
+            font-size:(11/@rem);
+            color: #fff;
+
+            p:first-child{
+                font-size: (12/@rem);
+                margin-bottom: (7/@rem);
+
+                span:first-child{
+                    display: inline-block;
+                    width: (22/@rem);
+                    height: (14/@rem);
+                   
+                    background-image: url(../images/品牌.png);
+                    background-size: 100%;
+                    vertical-align: middle;
+                }
+            }
+            p:last-child{
+                margin-top: (4/@rem);
+
+                span:first-child{
+                    display: inline-block;
+                    width: (9/@rem);
+                    height: (9/@rem);
+                    background-image: url(../images/减3.png);
+                    background-size: 100%;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+    }
+    .notify{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: (20/@rem);
+        background-color: #bebebe;
+        img:first-child{
+            width: (16/@rem);
+            height: (9/@rem);
+            margin-left: (38/@rem);
+        }
+        div{
+            display: flex;
+            flex: 1;
+            width: 0;
+            span{
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+        img:last-child{
+            width: (3/@rem);
+            height: (5/@rem);
+            margin-right: (38/@rem);
+        }
+    }
+}
+
+// 导航
+nav{
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: (30/@rem);
+        border-bottom: (2/@rem) solid #e5e6e7;
+        color: #535353;
+        font-size: (11/@rem);
+        box-sizing: border-box;
+        li{
+            a{
+                &:link{
+                    color: #4e555d;
+                }
+                &:visited{
+                    color: #4e555d;
+                }
+                &:active{
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+// 活动
+.activity{
+    .vue{
+        display: flex;
+        justify-content: space-between;
+        width: (343/@rem);
+        height: (30/@rem);
+        padding: (10/@rem) (16/@rem) (15/@rem) (16/@rem);
+        
+        .left{
+            h6{
+                margin-bottom: (5/@rem);
+                font-size: (14/@rem);
+            }
+            img{
+                width: (11/@rem);
+                height: (11/@rem);
+            }
+            span{
+                color: #5f656d;
+            }
+        }
+
+        .right{
+            .pic{
+                width: (35/@rem);
+                text-align: center;
+                img{
+                    width: (15/@rem);
+                    height: (15/@rem);
+                    margin-bottom: (3/@rem);
+                }
+            }
+            
+        }
+    }
+    .classify{
+        width: 100%;
+        height: (50/@rem);
+        border-top: (1/@rem) solid #bebebe;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            width: (343/@rem);
+            height: (50/@rem);
+            padding: 0 (16/@rem) ;
+            
+            li{
+                text-align: center;
+                margin-top: (5/@rem);
+                &:nth-child(2n){
+                    width: (1/@rem);
+                    height: (30/@rem);
+                    background-color: #bebebe;
+                }
+                p{
+                    font-size: (20/@rem);
+                    color:#bebebe
+                }
+            }
+            
+        }
+    }
+
+    .inform{
+        .top{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: (55/@rem);
+            padding: 0 (13/@rem);
+            h5{
+               font-weight:400; 
+            }
+            span{
+                margin-left: (14/@rem);
+                color:#ecec64
+            }
+        }
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: (343/@rem);
+            height: (135/@rem);
+            border-bottom: (1/@rem) solid pink;
+            padding: 0 (16/@rem);
+            a{
+                color: #000;
+                img{
+                    width: (12/@rem);
+                    height: (12/@rem);
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .course{
+        p{
+            margin: (10/@rem);
+            color: red;
+        }
+        .pic{
+            height: (80/@rem);
+            border-bottom: (1/@rem) solid #bebebe;
+            ul{
+                display: flex;
+                justify-content: space-around;
+                li{
+                    img{
+                        width: (90/@rem);
+                        height: (65/@rem);
+                    }
+                }
+            }
+        }
+    }
+    .store{
+        margin-top: (10/@rem);
+
+        ul{
+            width: (343/@rem);
+            padding: 0 (16/@rem);
+            li{
+                height: (40/@rem);
+                
+                line-height: (40/@rem);
+                border-bottom: (1/@rem) solid #bebebe;
+                span{
+                    margin-left: (20/@rem);
+                }
+            }
+        }
+    }
+    .blank{
+        height: (100/@rem);
+    }
+}
+
+
+// 底部
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: (36/@rem);
+
+    .left{
+        width: 50%;
+        img{
+            width: 100%;
+            height: (36/@rem);
+        }
+    }
+    .right{
+        width: 50%;
+        height: (36/@rem);
+        text-align: center;
+        line-height: (36/@rem);
+        background-color: #ff6347;
+
+        a{
+            color: #fff;
+        }
+    }
+}
